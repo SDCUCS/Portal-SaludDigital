@@ -1,0 +1,135 @@
+#navbar {
+    transition: top 0.3s;
+}
+
+.navbar-logo-right img {
+    max-width: 50px;
+    /* border: solid 1px blue; */
+}
+
+/* Ajuste de colores y espaciado */
+.navbar-brand, .nav-link {
+    color: #333;
+    
+}
+
+.nav-link {
+    margin: 0 10px;
+    /* border: solid 1px blue; */
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #0056b3;
+}
+
+.salud-digital-logo {
+    width: 170px;
+}
+
+.right-logo {
+    width: 50px;
+    margin-left: 15px;
+}
+
+.dropdown-item {
+    font-weight: 500;
+}
+
+/* medias */
+
+@media (max-width: 1373px) {
+    .salud-digital-logo {
+        width: 160px;
+    }
+}
+
+@media (max-width: 1363px) {
+    .nav-link {
+        font-size: 0.95rem;
+    }
+    .right-logo {
+        width: 48px;
+    }
+}
+
+@media (max-width: 1321px) {
+    .salud-digital-logo {
+        width: 150px;
+    }
+    .nav-link, .dropdown-item {
+        font-size: 0.91rem;
+    }
+}
+
+@media (max-width: 1275px) {
+    .salud-digital-logo {
+        width: 145px;
+    }
+    .nav-link, .dropdown-item {
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 1195px) {
+    .salud-digital-logo {
+        width: 135px;
+    }
+    .nav-link, .dropdown-item {
+        font-size: .78rem;
+    }
+    .right-logo {
+        width: 42px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1121px) {
+    .salud-digital-logo {
+        width: 135px;
+        margin-right: -10px;
+    }
+    .nav-link, .dropdown-item {
+        font-size: 0.74rem;
+    }
+    .right-logo {
+        width: 40px;
+    }
+    .nav-link {
+        margin: 0px 7px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-link, .dropdown-item {
+        font-size: 0.72rem;
+    }
+}
+
+/* DROPDOWN */
+
+.navbar-nav .dropdown-menu {
+    display: none; 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    z-index: 1;
+    background-color: white;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(-10px); 
+    transition: all 0.3s ease; 
+    width: 200px; 
+}
+
+.navbar-nav .dropdown:hover > .dropdown-menu {
+    display: block;
+    opacity: 1; 
+    transform: translateY(0);
+    z-index: 1; 
+}
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Salud Digital</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/noticias.css">
+    <link rel="icon" type="image/x-icon" href="../img/salud-digital-icon.png">
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../img/salud-digital.png" alt="Logo Izquierdo" class="salud-digital-logo" style="width: 0.9;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./noticias_code.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienesSomos.html">¿Quiénes Somos?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">Salud</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <li><a class="dropdown-item" href="./telemedicina.html">Telemedicina</a></li>
+                            <li><a class="dropdown-item" href="./farmacologia2.html">Farmacología</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">Aplicaciones de Salud</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <li><a class="dropdown-item" href="./salud-mental.html">Salud Mental</a></li>
+                            <li><a class="dropdown-item" href="./workInProgress.html">Nutrición</a></li>
+                            <li><a class="dropdown-item" href="./workInProgress.html">Actividad Física</a></li>
+                            <li><a class="dropdown-item" href="./workInProgress.html">Aplicacion enfermera</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./bioprueba.html">Servicios Bioinformáticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./workInProgress.html">Cursos y Talleres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./InteligenciaArtificial.html">Inteligencia Artificial</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-logo-right">
+                <img src="../img/logo-cucs.png" alt="Logo Derecho" class="right-logo">
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="container mt-5">
+            <!-- Sección de Noticias -->
+            <div class="text-center mb-5">
+                <p class="fw-bold" style="font-size: 5.5vh;">Noticias por <span style="color: #414BB2;">Salud Digital</span></p>
+            </div>
+            
+            
+            <div class="mt-5 p-2">
+                <div class="row">
+                    <!-- Noticias Laterales Izquierdas -->
+                    <div class="col-lg-3 col-md-6 d-flex flex-column gap-3">
+                        <div class="card h-100 shadow noticia-principal" data-bs-toggle="modal" data-bs-target="#modalNoticia"
+                            data-titulo="Salud digital en México: el vacío legal que frena su desarrollo tecnológico."
+                            data-descripcion="La salud digital ha revolucionado los servicios médicos en México con expedientes electrónicos, telemedicina y software como dispositivos médicos (SaMD). Sin embargo, la falta de un marco regulatorio actualizado genera incertidumbre. La NOM-024-SSA3-2012 regula el Expediente Clínico Electrónico, pero no cubre todos los avances tecnológicos, dejando vacíos legales que afectan a empresas, médicos y pacientes. El SaMD, aunque innovador, plantea riesgos en la seguridad de datos y diagnósticos automatizados sin supervisión. En 2015, se intentó regular la atención médica a distancia, pero la norma fue cancelada, dejando lineamientos no obligatorios y una adopción desigual de la telemedicina."
+                            data-imagen="../img/notices/noticemain1.jpg"
+                            data-url="https://www.msn.com/es-mx/noticias/other/salud-digital-en-m%C3%A9xico-el-vac%C3%ADo-legal-que-frena-su-desarrollo-tecnol%C3%B3gico/ar-AA1yxLGw?ocid=BingNewsVerp">
+                            <img src="../img/notices/noticemain1.jpg" class="card-img-top" alt="Noticia 1">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Salud digital en México: el vacío legal que frena su desarrollo tecnológico.</h6>
+                                <p class="card-text text-muted">06 de febrero, 2025</p>
+                            </div>
+                        </div>
+
+                        <div class="card h-100 shadow noticia-principal" data-bs-toggle="modal" data-bs-target="#modalNoticia"
+                            data-titulo="La OMS sigue dando de qué hablar."
+                            data-descripcion="La salida de Argentina de la OMS y la editorial de *The Lancet* sobre la crisis sanitaria en EE.UU. resaltan los desafíos globales en salud. La salida de Argentina afecta el equilibrio político de la OMS en América Latina y podría generar desconfianza en otros países. El nacionalismo sanitario, exacerbado por la pandemia, pone en duda la efectividad del derecho internacional en emergencias. *The Lancet* señala que EE.UU. se ha vuelto un socio poco confiable en salud global. Para fortalecer la OMS, se propone diversificar su financiamiento, dar más autonomía a oficinas regionales y reforzar la cooperación con el sector privado, garantizando transparencia y equidad."
+                            data-imagen="../img/notices/noticemain2.jpg"
+                            data-url="https://www.eleconomista.com.mx/opinion/oms-sigue-dando-hablar-20250209-745570.html">
+                            <img src="../img/notices/noticemain2.jpg" class="card-img-top" alt="Noticia 2">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">La OMS sigue dando de qué hablar.</h6>
+                                <p class="card-text text-muted">09 de febrero, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Noticia Principal Grande -->
+                    <div class="col-lg-6">
+                        <div class="card h-100 shadow noticia-principal" data-bs-toggle="modal" data-bs-target="#modalNoticia"
+                            data-titulo="DeepSeek hizo que me saltaran las lágrimas: los jóvenes chinos que buscan terapia en la inteligencia artificial."
+                            data-descripcion="Los chatbots de IA, como DeepSeek, se han convertido en un apoyo emocional en China, especialmente ante el aumento de la ansiedad y la depresión debido a la crisis económica, el desempleo y los confinamientos por COVID-19. Usuarios como Holly consideran que ofrecen mejor ayuda que los servicios de asesoramiento pagados. Sin embargo, expertos advierten que no deben sustituir el tratamiento profesional para problemas de salud mental graves."
+                            data-imagen="../img/notices/noticemain3.jpg"
+                            data-url="https://www.msn.com/es-mx/tecnolog%C3%ADa/inteligencia-artificial/deepseek-hizo-que-me-saltaran-las-l%C3%A1grimas-los-j%C3%B3venes-chinos-que-buscan-terapia-en-la-inteligencia-artificial/ar-AA1z0Cyv?ocid=BingNewsVerp">
+                            <img src="../img/notices/noticemain3.jpg" alt="Noticia Principal" class="h- w-100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title fw-bold mt-3 fs-4">DeepSeek hizo que me saltaran las lágrimas: los jóvenes chinos que buscan terapia en la inteligencia artificial.</h5>
+                                <p class="card-text text-muted mt-5">13 de febrero, 2025</p>
+                                <p class="card-text">Los chatbots de IA, como DeepSeek, se han convertido en un apoyo emocional en China, especialmente ante el aumento de la ansiedad y la depresión debido a la crisis económica, el desempleo y los confinamientos por COVID-19. Usuarios como Holly consideran que ofrecen mejor ayuda que los servicios de asesoramiento pagados. Sin embargo...</p>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Noticias Laterales Derechas -->
+                    <div class="col-lg-3 col-md-6 d-flex flex-column gap-3">
+                        <div class="card h-100 shadow noticia-principal" data-bs-toggle="modal" data-bs-target="#modalNoticia"
+                            data-titulo="Disminución del estrés, ansiedad y depresión, entre los beneficios de la activación física."
+                            data-descripcion="Según el Inegi, el 60.2% de los adultos en México son inactivos físicamente, y más del 75% de los mayores de 20 años tienen sobrepeso u obesidad. La OMS señala que en América Latina el 62% de los adultos enfrenta estos problemas, afectando también al 40% de los adolescentes. La actividad física, más allá del deporte, es clave para la salud y el bienestar, ayudando a reducir estrés, ansiedad y depresión. Incorporarla en la rutina es sencillo con actividades como caminar, bailar o subir escaleras, mejorando la calidad de vida y previniendo enfermedades."
+                            data-imagen="../img/notices/noticemain4.jpg"
+                            data-url="https://www.eleconomista.com.mx/los-especiales/salud/disminucion-estres-ansiedad-depresion-beneficios-activacion-fisica-20250207-745414.html">
+                            <img src="../img/notices/noticemain4.jpg" class="card-img-top" alt="Noticia 4">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">Disminución del estrés, ansiedad y depresión, entre los beneficios de la activación física.</h6>
+                                <p class="card-text text-muted">07 de febrero, 2025</p>
+                            </div>
+                        </div>
+            
+                        <div class="card h-100 shadow noticia-principal" data-bs-toggle="modal" data-bs-target="#modalNoticia"
+                            data-titulo="El futuro de la salud: nanofibras."
+                            data-descripcion="La unión de la nanotecnología y la biomedicina ha impulsado el desarrollo de nanobiomateriales para tratar enfermedades, mejorar la ingeniería de tejidos y optimizar la administración de medicamentos. Entre ellos, las nanofibras destacan por su alta relación superficie-volumen, facilitando la interacción celular en medicina regenerativa. Son flexibles, resistentes y pueden incorporar biomoléculas como antibióticos y analgésicos, permitiendo tratamientos personalizados. Además, imitan la matriz extracelular (MEC), un andamio natural que guía la regeneración de tejidos, potenciando los avances en medicina regenerativa."
+                            data-imagen="../img/notices/noticemain5.jpg"
+                            data-url="https://www.launion.com.mx/blogs/ciencia/noticias/265228-el-futuro-de-la-salud-nanofibras-que-transforman-el-tratamiento-de-enfermedades.html ">
+                            <img src="../img/notices/noticemain5.jpg" class="card-img-top" alt="Noticia 5">
+                            <div class="card-body text-center">
+                                <h6 class="card-title">El futuro de la salud: nanofibras.</h6>
+                                <p class="card-text text-muted">17 de febrero, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="modal fade" id="modalNoticia" tabindex="-1" aria-labelledby="modalNoticiaLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg"> <!-- Puedes cambiar modal-lg a modal-sm o modal-xl -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title w-75 pt-3" id="modalNoticiaLabel"></h2>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-justify">
+                            <img id="modalNoticiaImagen" src="" class="img-fluid mb-3" alt="Imagen de la noticia">
+                            <div class="mx-5 mb-3">
+                                <p id="modalNoticiaDescripcion" class="modal-text"></p>
+                                <p class="modal-text mt-4" style="font-weight: 500;">Visita la noticia completa en:</p>
+                                <a href="modalNoticiaUrl" 
+                                target="_blank" class="btn btn-outline-primary mt-1 col-3 modal-btn">
+                                Leer más
+                            </a>  
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        <div class="text-center mb-3 mt-5">
+            <h1 class="fw-bold pt-5">Más noticias</h1>
+        </div>
+
+        <div class="container mt-5" style="margin-top: 200px;">
+            <div id="noticias" class="row">
+                <!-- Las noticias se cargarán aquí dinámicamente -->
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-dark py-4" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <!-- Columna Izquierda -->
+                <div class="col-md-4 text-center text-md-start mb-3">
+                    <img src="../img/logo-udg.png" alt="Logo Footer" class="img-fluid mb-3 mt-0" style="width: 100%">
+                    <p class="text-muted" style="font-size: 0.9rem;">Centro Universitario de Ciencias de la Salud.<br>
+                        Sierra Mojada 950, Col. Independencia, CP. 44340.<br>
+                        Guadalajara, Jalisco. México.<br>
+                        Teléfono: +52 (33) 1058 5200
+                    </p>
+                </div>
+    
+                <!-- Columna Central -->
+               <div class="col-md-4 text-center mb-3 pt-3">
+                    <br>
+                    <h5 class="fw-bold">Enlaces Útiles</h5>
+                    <ul class="list-unstyled">
+                        <br>
+                        <li><a href="../index.html" class="text-dark text-decoration-none">Página Principal</a></li>
+                        <li><a href="./quienesSomos.html" class="text-dark text-decoration-none">Acerca de Nosotros</a></li>
+                        
+                        
+                    </ul>
+                </div>
+
+                <!-- Columna Derecha -->
+                <div class="col-md-4 text-center mb-3 pt-3">
+                    <br>
+                    <h5 class="fw-bold">Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <br>
+                        <li><a href="https://www.instagram.com/salud_digital_cucs/" class="text-dark text-decoration-none">Instagram</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    Derechos reservados ® 1997-2025, Centro Universitario de Ciencias de la Salud.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/notices.js"></script>
+    <script src="../js/modalNoticias.js"></script>
+</body>
+</html>

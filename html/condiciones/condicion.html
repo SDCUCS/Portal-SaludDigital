@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>"Agregar Condicion"</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/condiciones.css">
+    <link rel="icon" type="image/x-icon" href="/img/salud-digital-icon.png">
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center salud-digital-logo" href="/index.html">
+                <img src="/img/salud-digital.png" alt="Logo Izquierdo" style="width: 170px; margin-right: -10px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../noticias_code.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../quienesSomos.html">¿Quiénes Somos?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">Salud</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <li><a class="dropdown-item" href="../telemedicina.html">Telemedicina</a></li>
+                            <li><a class="dropdown-item" href="../farmacologia2.html">Farmacología</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">Aplicaciones de Salud</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <li><a class="dropdown-item" href="../salud-mental.html">Salud Mental</a></li>
+                            <li><a class="dropdown-item" href="#">Nutrición</a></li>
+                            <li><a class="dropdown-item" href="#">Actividad Física</a></li>
+                            <li><a class="dropdown-item" href="#">Aplicacion enfermera</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../bioprueba.html">Servicios Bioinformáticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cursos y Talleres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../InteligenciaArtificial.html">Inteligencia Artificial</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right-logo">
+                <img src="../img/logo-cucs.png" alt="Logo Derecho" style="width: 50px;">
+            </div>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div class="container mt-5">
+            <!-- Sección de Noticias -->
+            <div class="text-center mb-5">
+                <h1 class="fw-bold">Noticias por <span class="text-primary">Salud Digital</span></h1>
+                <p class="text-muted">Lo que ha ocurrido actualmente</p>
+            </div>
+            <div class="row gy-4">
+                <!-- Noticia Principal -->
+                <div class="col-lg-6">
+                    <div class="card h-100 shadow">
+                        <img src="ruta-principal.jpg" class="card-img-top" alt="Noticia Principal">
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Boletín no. 203 La Centenaria Sociedad Médica...</h5>
+                            <p class="card-text text-muted">23 octubre, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Noticias Laterales -->
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow">
+                        <img src="ruta-lateral1.jpg" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <h6 class="card-title">Adiós a los pies secos: soluciones naturales...</h6>
+                            <p class="card-text text-muted">22 octubre, 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow">
+                        <img src="ruta-lateral2.jpg" class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <h6 class="card-title">Cambios de hora: cómo adaptarse...</h6>
+                            <p class="card-text text-muted">21 octubre, 2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Sección de Acerca de Microbiología -->
+        <div class="container mt-5">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Acerca de microbiología</h2>
+            </div>
+            <div class="row gy-4">
+                <!-- Noticia Repetitiva -->
+                <div class="col-lg-3 col-md-4 col-sm-6">
+                    <div class="card h-100 shadow">
+                        <img src="ruta1.jpg" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <h6 class="card-title">Noticia 1: Breve descripción...</h6>
+                            <p class="card-text text-muted">Fecha</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Agrega más noticias repitiendo este bloque -->
+            </div>
+        </div>        
+    </div>
+
+
+
+    <footer class="bg-light text-dark py-4">
+        <div class="container">
+            <div class="row">
+                <!-- Columna Izquierda -->
+                <div class="col-md-4 text-center text-md-start mb-3">
+                    <img src="/img/logo-udg.png" alt="Logo Footer" class="img-fluid mb-3 mt-0" style="width: 100%">
+                    <p class="text-muted" style="font-size: 0.9rem;">Centro Universitario de Ciencias de la Salud.<br>
+                        Sierra Mojada 950, Col. Independencia, CP. 44340.<br>
+                        Guadalajara, Jalisco. México.<br>
+                        Teléfono: +52 (33) 1058 5200
+                    </p>
+                </div>
+    
+                <!-- Columna Central -->
+                <div class="col-md-4 text-center mb-3 pt-3">
+                    <h5 class="fw-bold">Enlaces Útiles</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">Página Principal</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Acerca de Nosotros</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Contacto</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Términos y Condiciones</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Columna Derecha -->
+                <div class="col-md-4 text-center mb-3 pt-3">
+                    <h5 class="fw-bold">Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-dark text-decoration-none">Facebook</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Twitter</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">Instagram</a></li>
+                        <li><a href="#" class="text-dark text-decoration-none">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    Derechos reservados ® 1997-2025, Centro Universitario de Ciencias de la Salud.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="/js/navbar.js"></script>
+</body>
+</html>

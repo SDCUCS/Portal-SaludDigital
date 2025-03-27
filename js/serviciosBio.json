@@ -1,0 +1,57 @@
+[
+    {
+        "title": "Acoplamiento molecular <br> Molecular docking.",
+        "descr1": "Es una técnica computacional que tiene como fin predecir las interacciones a nivel molecular entre moléculas, ya sea entre moléculas pequeñas (ligando) con una proteína blanco (receptor), o bien entre proteínas. Para realizar análisis de acoplamiento molecular es necesario contar con una representación tridimensional de alta resolución de la proteína, así como de los ligandos de interés.",
+        "descr2": "Esta herramienta virtual, es altamente utilizada en el campo de desarrollo de fármacos, ya sea para una nueva invención, así como en el reposicionamiento de compuestos existentes. El uso del acoplamiento molecular en las ciencias biomédicas eficientiza los experimentos in vitro e in vivo, además de reducir costos durante el desarrollo de proyectos.",
+        "descr3": "Existen dos estrategias de análisis: <br><br> <strong>Acoplamiento molecular localizado o directo:</strong> Se basa en evaluación de las posibles interacciones moleculares sobre un sitio en específico reportado previamente, como sitios activos o alostéricos, relacionado con la funcionabilidad. <br><br> <strong>Acoplamiento molecular ciego:</strong> Esta estrategia se utiliza cuando se desconoce sitios relevantes de la proteína, así como para detectar posibles sitios y modos de unión de ligandos sobre una superficie proteína (proteína blanco).",
+        "descr4": "Existen diversos programas y servidores disponibles para realizar acoplamiento molecular, entre los más utilizados se destacan:",
+        "img1": "../img/bioinf/molecular1.jpg",
+        "img2": "../img/bioinf/molecular2.jpg",
+        "img3": "../img/bioinf/molecular3.jpg",
+        "img4": "../img/bioinf/molecular4.jpg"
+    },
+    {
+        "title": "Análisis <br>estadísticos.",
+        "descr1": "Los servicios de Estadística y Análisis de Datos incluyen técnicas para recolectar, procesar, interpretar y presentar datos, permitiendo identificar patrones, establecer relaciones y tomar decisiones informadas. Van desde estadísticas descriptivas hasta modelos predictivos avanzados, usando métodos como regresión, pruebas de hipótesis y análisis multivariados.",
+        "descr2": "La estadística es realizada a través del uso de ordenadores muy potentes. Este tipo de análisis requieren de un gasto computacional mayor, por lo que generalmente se realizan en supercomputadoras.",
+        "descr3": "Existen diversos programas  y servidores disponibles para realizar estadística avanzada, entre los más utilizados se destacan: SPSS, SAS, R, Python.",
+        "descr4": "<strong>Principales usos de la estadística.</strong><ul style='text-align: justify;'><li>Toma de decisiones basada en datos: Permite tomar decisiones informadas y objetivas, en lugar de basarse en intuiciones o corazonadas.</li><li>Optimización de procesos y recursos: Ayuda a identificar áreas de mejora y a utilizar los recursos de manera más eficiente.</li><li>Sector salud: Facilita la identificación de tendencias en enfermedades, la evaluación de tratamientos y la mejora de políticas de salud pública.</li><li>Industria: Contribuye a mejorar la calidad de productos y procesos mediante el control estadístico.</li><li>Ámbito financiero: Permite gestionar riesgos, analizar mercados y prever comportamientos económicos.</li><li>Investigación científica: Ayuda a validar hipótesis, interpretar resultados experimentales y diseñar estudios más robustos.</li></ul>",
+        "img1": "../img/bioinf/estadistica1.jpg",
+        "img2": "../img/bioinf/estadistica2.jpg",
+        "img3": "../img/bioinf/estadistica3.jpg",
+        "img4": "../img/bioinf/estadistica4.jpg"
+    },
+    {
+        "title": "Análisis <br>genómico.",
+        "descr1": "Los análisis genómicos consisten en un conjunto de evaluaciones en la que se busca caracterizar el genoma de un ser vivo. El ensamble consiste en reconstruir un genoma completo a partir de fragmentos de ADN secuenciado. Es clave para entender la composición genética de un organismo. La predicción de marcos abiertos de lectura (ORFs, por sus siglas en inglés) identifica regiones del ADN que pueden codificar proteínas, mientras que la anotación funcional asigna funciones específicas a genes o proteínas. Finalmente, los alineamientos y análisis filogenéticos determinan relaciones evolutivas entre organismos.",
+        "descr2": "<strong>Utilidad y Aplicabilidad:</strong> <br>El estudio genómico permite identificar organismos y variantes genéticas, clave para entender enfermedades y desarrollar vacunas. Facilita la detección de genes de resistencia antimicrobiana, impulsando nuevos fármacos. Además, la anotación funcional ayuda a comprender redes metabólicas y procesos celulares, favoreciendo biotecnologías como enzimas industriales. El análisis filogenético es esencial para rastrear brotes infecciosos y entender relaciones evolutivas, con impacto en epidemiología y salud pública. Estos avances, apoyados en bioinformática, tienen aplicaciones en salud, biotecnología y agricultura.",
+        "descr3": "<strong>Softwares:</strong><ul><li>Ensamble: SPAdes, Velvet.</li><li>ORFs: Prodigal, GeneMark.</li><li>Anotación: UniProt, InterProScan, PHANOTATE, Prodigal, PHROGs, CARD, VFDB, MMseqs2, PyHMMER.</li><li>Filogenia: Clustal Omega, MAFFT, Rstudio.</li></ul>",
+        "descr4": "Existen diversos programas  y servidores disponibles para realizar análisis genómicos, entre los más utilizados se destacan:",
+        "img1": "../img/bioinf/genomico1.jpg",
+        "img2": "../img/bioinf/genomico2.jpg",
+        "img3": "../img/bioinf/genomico3.jpg",
+        "img4": "../img/bioinf/genomico4.png"
+    },
+    {
+        "title": "Análisis Bioinformático <br>de Microbiota.",
+        "descr1": "Los análisis bioinformáticos de microbiota buscan entender la composición y funcionalidad de las comunidades microbianas mediante datos de secuenciación. Incluyen la clasificación taxonómica para identificar especies, análisis de diversidad alfa y beta, y predicción funcional del potencial metabólico. QIIME 2 ofrece un flujo de trabajo robusto y reproducible, desde la calidad de datos hasta la generación de gráficos avanzados, facilitando la interpretación de resultados.",
+        "descr2": "<strong>Utilidad y Aplicabilidad:</strong> <br>El análisis de microbiota tiene aplicaciones en salud, agricultura y ecología. En salud, ayuda a entender su relación con enfermedades y tratamientos. En agricultura, optimiza cultivos al estudiar microorganismos beneficiosos. En ecología, evalúa el impacto ambiental en comunidades microbianas. Los análisis funcionales permiten predecir el metabolismo comunitario y detectar genes clave, usando tecnologías de secuenciación y bioinformática para investigación y soluciones prácticas.",
+        "descr3": "<strong>Softwares y Herramientas:</strong><ul><li>QIIME 2 es un software líder en el análisis bioinformático de microbiota.</li><li>Control de calidad: DADA2, Deblur.</li><li>Clasificación taxonómica: SILVA, Greengenes, UNITE.</li><li>Análisis de diversidad: Faith's PD, Shannon, Bray-Curtis, UniFrac.</li><li>Visualización: Emperor, QIIME 2 View.</li><li>Análisis funcional predictivo: PICRUSt2, Tax4Fun.</li><li>Integración de datos: R, Python.</li></ul>",
+        "descr4": "QIIME 2 es una plataforma bioinformática para el análisis de microbiota que permite procesar datos de secuenciación de ADN, evaluar la diversidad microbiana y asignar taxonomía de forma reproducible. Su flujo de trabajo incluye filtrado de secuencias, análisis de composición y visualización de resultados, facilitando estudios en salud, medio ambiente y biotecnología",
+        "img1": "../img/bioinf/microbiota3.jpg",
+        "img2": "../img/bioinf/microbiota2.jpg",
+        "img3": "../img/bioinf/microbiota3.jpg",
+        "img4": "../img/bioinf/microbiota4.jpg"
+    },
+    {
+        "title": "Dinámica molecular.",
+        "descr1": "La dinámica molecular es una técnica que se usa para estudiar cómo se mueven y se comportan las moléculas a lo largo del tiempo. A través de simulaciones computacionales, se analizan las interacciones entre los átomos que forman una molécula, lo que permite predecir cómo cambiarán sus posiciones, velocidades y energías, así como interacciones con ligandos.",
+        "descr2": "Este tipo de análisis requieren de un gasto computacional mayor, por lo que generalmente se realizan en supercomputadoras.",
+        "descr3": "Existen diversos programas  y servidores disponibles para realizar dinámica molecular, entre los más utilizados se destacan:<ul><li>GROMACS (FAST. FLEXIBLE. FREE).</li><li>NAMD (SCALABLE MOLECULAR DYNAMICS).</li></ul>",
+        "descr4": "<strong>Principales usos de la dinámica molecular.</strong><br><ul style='text-align: justify;'><li>Simulación del movimiento de átomos y moléculas  a lo largo del tiempo.</li><li>Interacciones entre átomos y moléculas, como los enlaces químicos, las fuerzas de Van der Waals y los puentes de hidrógeno para determinan el comportamiento de la molécula.</li><li>Calculo del movimiento de moléculas, que describen cómo varía la energía en función de las distancias y las interacciones entre los átomos.</li>",
+        "img1": "../img/bioinf/dinamica1.jpg",
+        "img2": "../img/bioinf/dinamica2.gif",
+        "img3": "../img/bioinf/dinamica3.png",
+        "img4": "../img/bioinf/dinamica4.jpg"
+    }
+]

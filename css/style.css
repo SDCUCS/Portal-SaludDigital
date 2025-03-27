@@ -1,0 +1,593 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FBF9F9;
+}
+
+h2 { 
+    color: black;
+}
+
+/* #region Main */
+
+.salud-digital-title {
+    margin-top: 200px;
+    margin-bottom: 3rem;
+}
+
+/* #endregion */
+
+/* #region NOTICIAS */
+
+.cont-noticias {
+    background-color: #FBF9F9;
+    height: auto;
+    /* border: red solid 1px; */
+    margin-bottom: 3rem;
+}
+
+/* #endregion */
+
+/* #region SALUD */
+
+.link-hover {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+}
+
+.link-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.link-hover:hover::after {
+    width: 100%;
+}
+
+.cont-salud {
+    background-color: #Fff;
+    height: auto;
+}
+
+.cont-appsalud {
+    background-color: #Fff;
+    height: auto;
+    padding-bottom: 10rem;
+}
+
+@media (max-width: 992px) {
+    .salud-imagen {
+        margin-top: 30%;
+    }
+}
+
+@media (max-width: 769px) {
+    .image-container {
+        width: auto;
+    }
+    .cont-noticias, .cont-salud {
+        padding: 1rem;
+    }
+    .text-salud h1 {
+        font-size: 1.5rem;
+    }
+    .text-salud p {
+        font-size: 0.85rem;
+    }
+    .div-notice {
+        width: 50%;
+    }
+    .salud-imagen {
+         margin-top: 0px;
+    }
+
+    /* IMG-SMENTAL*/
+    .img-smental {
+       width: 400px; 
+    }
+}
+
+/* #endregion */
+
+/* #region FOOTER */
+
+footer {
+    background-color: #f8f9fa; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+}
+
+footer h5 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+footer a:hover {
+    color: #0056b3; /* Azul Bootstrap al pasar el mouse */
+}
+
+/* #endregion */
+
+/* #region Aplicaciones de la salud */
+
+.app-salud-img {
+    /* border: green 1px solid; */
+    background-color: #f2f4fc;
+    width: 100%;         /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: 200px;       /* Ajusta la altura deseada para todas las imágenes */
+    object-fit: scale-down;   /* Ajusta la imagen para que ocupe el contenedor sin distorsionarse */
+    border-radius: 10px;  /* Opcional: Añade esquinas redondeadas */
+    transition: 0.5s ease;
+}
+
+.app-salud-img:hover {
+    -webkit-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+    transition: 0.5s ease;
+}
+
+/* #endregion */
+
+/* #region SALUD MENTAL */
+
+@media (max-width: 1440px) {
+    .descr-smental {
+        font-size: 1.2rem;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .descr-smental {
+        font-size: 1rem;
+        padding: 2%;
+    }
+}
+
+@media (max-width: 769px) {
+    /* Para todas las filas, invierte los elementos */
+    /* .row:not(.no-reverse) {
+        flex-direction: column-reverse;
+    } */
+    .row{
+        flex-direction: column-reverse;
+    }
+
+    .img-smental {
+       width: 400px; 
+       /* background-color: firebrick; */
+    }
+    .title-smental {
+        font-size: 2rem; 
+        text-align: center;
+    }
+    .descr-smental {
+        text-align: center;
+        padding: 3%;
+    }
+    .btn {
+        align-self: center; 
+        margin: 0 auto;
+    }
+}
+
+
+/* #endregion */
+
+/* #region servicios*/
+
+.expanded-content {
+    display: none;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+/* #endregion */
+
+
+/* TELEMEDICINA */
+
+.descr-telemed {
+    font-size: 1.1rem;;
+}
+
+
+/* SECCION DE VIDEOS*/
+@media (max-width: 769px) {
+    .cont-videos{
+        padding: 1rem;
+    }
+    .text-salud h1 {
+        font-size: 1.5rem;
+    }
+    .text-salud p {
+        font-size: 0.85rem;
+    }
+    .div-video {
+        width: 90%;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    .salud-imagen {
+         margin-top: 0px;
+    }
+
+    /* IMG-SMENTAL*/
+    .img-smental {
+       width: 400px; 
+    }
+}
+
+
+/* COORDINACION */
+
+.btn-coordi{
+    color: black;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    font-size: large;
+  }
+  .btn-coordi:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 5px;
+    left: 50%;
+    position: absolute;
+    background: #414BB2;
+    text-decoration: none;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    
+  }
+  .btn-coordi:hover:after { 
+    width: 100%; 
+    left: 0; 
+    text-decoration: none;
+
+  }
+
+
+
+
+  .ball_wrap {
+    position: relative;
+    margin: 150px;
+    width: 90px;
+}
+
+.green_ball {
+    background: #00C762;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    position: absolute;
+}
+
+.blue_ball {
+    background: #2F9BC1;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+}
+
+.ball_wrap div:nth-of-type(2) {
+    top: 20px;
+    left: -100px;
+}
+
+.ball_wrap div:nth-of-type(2):after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    width: 50px;
+    right: -50px;
+    top: 50%;
+}
+
+.ball_wrap div:nth-of-type(3) {
+    top: 20px;
+    right: -100px;
+}
+
+.ball_wrap div:nth-of-type(3):after {
+    content: "";
+    display: block;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    width: 50px;
+    left: -52px;
+    top: 50%;
+}
+
+.ball_wrap div:nth-of-type(4) {
+    right: 105px;
+    bottom: -160px;
+}
+
+.ball_wrap div:nth-of-type(4):after {
+    content: "";
+    display: block;
+    border-left: 1px solid #000;
+    position: absolute;
+    height: 130px;
+    left: 70px;
+    top: -120px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+/* Bola 5 (arriba izquierda) */
+.ball_wrap div:nth-of-type(5) {
+    top: -100px; /* Posicionada arriba */
+    left: -50px; /* Desplazada hacia la izquierda */
+}
+
+.ball_wrap div:nth-of-type(5):after {
+    content: "";
+    display: block;
+    border-left: 1px solid #000; /* Línea negra */
+    position: absolute;
+    height: 75px; /* Longitud de la línea */
+    left: 70%; /* Ajuste horizontal para alineación */
+    top: 40px; /* Punto inicial de la línea */
+    transform: rotate(-35deg); /* Rotación diagonal hacia la derecha */
+    transform-origin: top left; /* Punto de anclaje de la rotación */
+}
+
+
+/* Bola 6 (arriba derecha) */
+.ball_wrap div:nth-of-type(6) {
+    top: -100px; /* Posicionada arriba */
+    left: 150px; /* Desplazada hacia la derecha */
+}
+
+/* Bola 6 (arriba derecha) */
+.ball_wrap div:nth-of-type(6):after {
+    content: "";
+    display: block;
+    border-left: 1px solid #000; /* Línea negra */
+    position: absolute;
+    height: 100px; /* Longitud de la línea */
+    left: 25%; /* Ajuste horizontal para alineación */
+    top: 20px; /* Punto inicial de la línea */
+    transform: rotate(45deg); /* Rotación diagonal hacia la izquierda */
+    transform-origin: top right; /* Punto de anclaje de la rotación */
+}
+
+
+#info_coordi{
+    display: none;
+}
+  #mision1{
+    display: none;
+  }
+
+  #vision1{
+    display: none;
+  }
+
+
+
+.informacion_coordi{
+    padding: 0; /* Cambiar a 0 para que no haya padding adicional */
+    transition: transform .2s;
+}
+
+.informacion_coordi:hover {
+    -ms-transform: scale(1.15); /* IE 9 */
+    -webkit-transform: scale(1.15); /* Safari 3-8 */
+    transform: scale(1.15); 
+}
+
+
+.boton_cerrar{
+    position: absolute;
+    right: 0;
+}
+
+
+#info_presentacion1, #info_presentacion2, #info_presentacion3, #info_presentacion4, #info_presentacion5{
+    display: block;
+}
+
+#directorio1, #directorio2, #directorio3, #directorio4, #directorio5{
+    display: none;
+  }
+
+#eje_trab1, #eje_trab2, #eje_trab3, #eje_trab4, #eje_trab5{
+    display: none;
+  }
+
+
+#bioengineer_unit{
+    display: none;
+}
+
+#unidades{
+    display: block;
+}
+
+
+.esconder_unidades{
+    display: block;
+}
+
+
+.modalUnidades {
+    border: 1px solid darkblue;
+    border-radius: 10px;
+    min-height: auto; /* Elimina restricciones de altura mínima */
+    max-height: none; /* Permite que el contenedor crezca según el contenido */
+    width: 100%;
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+/* Responsividad personalizada para márgenes */
+@media (min-width: 576px) { /* Pantallas pequeñas y superiores */
+    .modalUnidades {
+        margin: 15px auto;
+    }
+}
+
+@media (min-width: 768px) { /* Pantallas medianas y superiores */
+    .modalUnidades {
+        margin: 20px auto;
+        max-width: 100%; /* Reducir el ancho en pantallas medianas */
+    }
+}
+
+@media (min-width: 1200px) { /* Pantallas grandes */
+    .modalUnidades {
+        margin: 25px auto;
+        max-width: 100%; /* Reducir más el ancho */
+    }
+}
+
+.modalUnidades.show {
+    display: block; /* Asegura que sea visible */
+    transform: scale(1); /* Crece al tamaño completo */
+    opacity: 1; /* Se vuelve visible */
+}
+
+
+#bioengineer_unit{
+    display: none;
+}
+
+#ambiente_unit{
+    display: none;
+}
+
+#innovacion_unit{
+    display: none;
+}
+
+#saludD_unit{
+    display: none;
+}
+
+#simulacion_unit{
+    display: none;
+}
+
+.eje-trabajo-list {
+    list-style-type: none; /* Elimina los marcadores de lista por defecto */
+    margin: 0; /* Elimina márgenes externos */
+    padding: 0; /* Elimina relleno interno */
+    text-align: left; /* Alinea el texto a la izquierda para mayor legibilidad */
+}
+
+.eje-trabajo-list li {
+    margin: 10px 0; /* Espaciado entre los elementos de la lista */
+    padding: 5px; /* Relleno interno para mejor apariencia */
+    background-color: #f9f9f9; /* Fondo claro */
+    border-radius: 5px; /* Bordes redondeados */
+    border: 1px solid #ddd; /* Bordes sutiles */
+    transition: background-color 0.3s ease; /* Transición para el hover */
+}
+
+.eje-trabajo-list li:hover {
+    background-color: #e9ecef; /* Cambia el fondo al pasar el cursor */
+}
+
+/* AREA DE QUIENES SOMOS*/
+/* Banner principal */
+.banner-area {
+    background-image: url('../img/quienesSomos2.jpg'); /* Cambia la ruta si es necesario */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 45vh;
+    transition: transform 0.5s ease-in-out; /* Animación suave */
+    z-index: 800;
+    transform: translateY(0); /* Posición inicial (visible) */
+}
+
+/* Clase para ocultar el banner */
+.banner-area.hidden {
+    transform: translateY(-100%); /* Mueve el banner fuera de la pantalla */
+}
+
+/* Efecto de superposición */
+.banner-area:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #130f40;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Título dentro del banner */
+.banner-area h2 {
+    position: relative;
+    margin: 0;
+    padding-top: 12%;
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .banner-area h2 {
+        padding-top: 40%; /* Incrementa el espacio superior */
+        font-size: 90px; /* Reduce el tamaño de fuente */
+    }
+}
+
+@media (max-width: 576px) {
+    .banner-area h2 {
+
+        padding-top: 35%; /* Incrementa aún más el espacio superior */
+        font-size: 70px; /* Ajusta el tamaño de fuente para pantallas muy pequeñas */
+    }
+}
+
+.redes{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 10px; 
+    padding-bottom: 5px;
+    margin-left: -100px;
+}
+
+
+/*COORDINACION DE ECOSISTEMAS PARA EL APRENDIZAJE*/
+.carousel-item{
+    height: 50vh;
+    
+}
+
+
+
+/*INTELIGENCIA ARTIFICIAL

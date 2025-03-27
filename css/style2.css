@@ -1,0 +1,396 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FBF9F9;
+}
+
+h2 { 
+    color: black;
+}
+
+h5{
+    color: black;
+    font-weight: bold;
+}
+
+summary{
+    color: black;
+    font-weight: bold;
+}
+
+.salud-digital-title {
+    margin-top: 200px;
+    margin-bottom: 3rem;
+}
+
+.farmacologia-title {
+    margin-top: 150px;
+    margin-bottom: 3rem;
+}
+
+/* NOTICIAS */
+.cont-noticias {
+    background-color: #FBF9F9;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+/* SALUD */
+.link-hover {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+}
+
+.link-hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    height: 3px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.link-hover:hover::after {
+    width: 100%;
+}
+
+.cont-salud, .cont-appsalud {
+    background-color: #fff;
+    height: auto;
+}
+
+.cont-appsalud {
+    padding-bottom: 10rem;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        width: auto;
+    }
+    .cont-noticias, .cont-salud {
+        padding: 1rem;
+    }
+    .text-salud h1 {
+        font-size: 1.5rem;
+    }
+    .text-salud p {
+        font-size: 0.85rem;
+    }
+    .div-notice {
+        width: 50%;
+    }
+}
+
+.textopred {
+    padding-top: 30px;
+    display: flex;
+    justify-content: normal;
+    align-items: normal;
+    padding-left: 250px;
+    padding-right: 250px;
+    text-align: center;
+}
+
+/* Aplicaciones de la salud */
+.app-salud-img {
+    background-color: #f2f4fc;
+    width: 100%;
+    height: 200px;
+    object-fit: scale-down;
+    border-radius: 10px;
+}
+
+/* FARMACOLOGIA */
+.cont-busqueda-farma {
+    background-color: #FBF9F9;
+    height: auto;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-input {
+    height: 50px;
+    border-radius: 30px;
+    padding-left: 35px;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.cont-popular {
+    background-color: #FBF9F9;
+    height: auto;
+    margin-bottom: 3rem;
+}
+
+/* Botones personalizados */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+
+
+}
+
+.btn-primary:hover, 
+.btn-primary:focus, 
+.btn-primary:active {
+    background-color: #0056b3;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 40px;
+}
+
+.btn-secondary:hover, 
+.btn-secondary:focus, 
+.btn-secondary:active {
+    background-color: #414BB2;
+    color: white;
+}
+
+.zoom{
+    padding: 0; /* Cambiar a 0 para que no haya padding adicional */
+    background-color: #fff;
+    transition: transform .2s;
+    width: 100%; /* Asegúrate de que ocupe el ancho completo */
+    min-height: 220px;
+    max-height: 220px;
+}
+
+.zoom:hover {
+    -ms-transform: scale(1.15); /* IE 9 */
+    -webkit-transform: scale(1.15); /* Safari 3-8 */
+    transform: scale(1.15); 
+}
+
+
+.modal1{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #525050bd;
+    display: flex;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .6s .9s;
+    --transform: translateY(-100vh);
+    --transition: transform .8s;
+
+}
+
+
+.modal1--show{
+    /*clase modificadora*/
+    opacity: 1;
+    pointer-events:  unset;
+    transition: opacity .6s;
+    --transform: translateY(0);
+    --transition: transform .6s .6s;
+
+
+}
+
+
+
+
+.botonModal{
+    text-decoration: none;   
+}
+
+
+.linea_med{
+    height: 5px; 
+    width: 100%; 
+    padding: 0;
+}
+.modal_container1 {
+    width: 90%; /* Ancho relativo para adaptabilidad */
+    max-width: 1200px; /* Límite máximo de ancho */
+    height: auto; /* Altura ajustable al contenido */
+    min-height: 500px; /* Altura mínima para mantener tamaño consistente */
+    max-height: 80vh; /* Altura máxima basada en el tamaño de la pantalla*/
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 20px; /* Bordes redondeados */
+    overflow-y: auto; /* Scroll si el contenido es mayor que el contenedor */
+
+
+    gap: 1em; /* Espaciado entre elementos */
+    transform: var(--transform); /* Transición visual */
+    transition: var(--transition); /* Transiciones suaves */
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    .modal_container1 {
+        width: 85%; /* Ancho más amplio en dispositivos pequeños */
+        padding: 2em; /* Reduce el padding en dispositivos pequeños */
+    }
+}
+
+/* Media Queries para dispositivos muy pequeños */
+@media (max-width: 576px) {
+    .modal_container1 {
+        width: 100%; /* Ocupar todo el ancho */
+        padding: 1.5em; /* Reduce el padding aún más */
+        max-width: 100%; /* Desactiva la limitación de ancho */
+    }
+}
+
+
+li .farmaco{
+    width: 90%;
+    text-align: justify;
+}
+ 
+.modal_title1{
+    font-size: 2.5rem;
+}
+
+.modal_paragraph1{
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 90%;
+}
+
+.modal_img1{
+    width: 100%;
+    max-width: 800px;
+}
+
+.modal_left{
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+    margin-right: -10px;
+    padding-left: 3em; /* Espaciado interno consistente */
+    padding-right: 2.5em; /* Espaciado interno consistente */
+    padding-bottom: 2.5em; /* Espaciado interno consistente */
+
+}
+
+.modal_text{
+    width: 70%;
+    max-width: 800px;
+    float: right;
+    padding-right: 2.5em; /* Espaciado interno consistente */
+    padding-bottom: 2.5em; /* Espaciado interno consistente */
+}
+
+.modal_close1{
+    margin-top: 20px;
+    text-decoration: none;
+    float: right;
+    color: #ffff;
+    background-color: #F26250;
+    padding: 1vh 1vh;
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 250;
+    transition: background-color .3s;
+
+}
+
+.modal_close1:hover{
+    color: #F26250;
+    background-color: #ffff;
+}
+
+
+.modal_close2{
+    margin-top: 20px;
+    text-decoration: none;
+    float: right;
+    color: #ffff;
+    background-color: #F26250;
+    padding: 1vh 1vh;
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 250;
+    transition: background-color .3s;
+
+}
+
+.modal_close2:hover{
+    color: #F26250;
+    background-color: #ffff;
+}
+
+
+
+.modal_close3{
+    margin-top: 20px;
+    text-decoration: none;
+    float: right;
+    color: #ffff;
+    background-color: #F26250;
+    padding: 1vh 1vh;
+    border: 1px solid;
+    border-radius: 10px;
+    display: inline-block;
+    font-weight: 250;
+    transition: background-color .3s;
+
+}
+
+.modal_close3:hover{
+    color: #F26250;
+    background-color: #ffff;
+}
+
+
+footer{
+    background-color: white;    
+}
+
+
+
+
+button.paginacion {
+    margin: 5px;
+    padding: 10px 16px;
+    background: linear-gradient(45deg, #414BB2, #7937a5);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+button.paginacion:hover {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+button.paginacion.active {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}

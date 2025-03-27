@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacología</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="icon" type="image/x-icon" href="../img/salud-digital-icon.png">
+</head>
+
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="../index.html">
+                <img src="../img/salud-digital.png" alt="Logo Izquierdo" style="width: 170px; margin-right: -10px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./noticias_code.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./quienesSomos.html">¿Quiénes Somos?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">Salud</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <li><a class="dropdown-item" href="./telemedicina.html">Telemedicina</a></li>
+                            <li><a class="dropdown-item" href="./farmacologia2.html">Farmacología</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">Aplicaciones de Salud</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <li><a class="dropdown-item" href="./salud-mental.html">Salud Mental</a></li>
+                            <li><a class="dropdown-item" href="./workInProgress.html">Nutrición</a></li>
+                            <li><a class="dropdown-item" href="./workInProgress.html">Actividad Física</a></li>
+                            <li><a class="dropdown-item" href="./workInProgress.html">Aplicacion enfermera</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./bioprueba.html">Servicios Bioinformáticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./workInProgress.html">Cursos y Talleres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./InteligenciaArtificial.html">Inteligencia Artificial</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-logo-right">
+                <img src="../img/logo-cucs.png" alt="Logo Derecho" style="width: 50px;">
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+        <div class="container text-center farmacologia-title">
+            <h1>Diccionario de <span style="color: #414BB2;">Farmacología</span></h1>
+            <div class="textopred">
+                <p><h6>Este diccionario está pensado para ofrecer a cualquier persona una comprensión clara y sencilla sobre diferentes
+                    medicamentos. Aquí encontrarás descripciones sobre cómo funcionan los fármacos, los síntomas que pueden aliviar
+                    y su utilidad general. No pretender ser una guía de tratamiento, sino un recurso informativo que te ayude a entender
+                    mejor el propósito de cada medicamente y su uso en el alivio de síntomas comunes.
+                </h6></p>
+            </div>
+            <br>       
+            <h4><span style="color: #414BB2;">Para un mejor diagnóstico, consulta con un profesional.</span>
+            </h4>
+        </div>
+
+        <!-- catalogo -->
+        <div class="container-fluid cont-busqueda-farma">
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+            <div class="container">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="search-container">
+                    <input type="text" class="form-control search-input" placeholder=" Ingrese datos...">
+                    <i class="fas fa-search search-icon"></i>
+                  </div><br> 
+                </div>         
+               </div>
+            </div>
+        </div>
+        <!-- HTML !-->
+
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row py-1">
+                <div class="col-md-auto col-6">
+                    <button class="btn btn-secondary mr-1 rounded active" data-category="Todo">Todo</button>
+                </div>
+                <div class="col-md-auto col-6">
+                    <button class="btn btn-secondary mr-1 rounded" data-category="Antihipertensivo">Antihipertensivos</button>
+                </div>
+                <div class="col-md-auto col-6">
+                    <button class="btn btn-secondary mr-1 rounded" data-category="Antibióticos">Antibióticos</button>
+                </div>
+                <div class="col-md-auto col-6">
+                    <button class="btn btn-secondary mr-1 rounded" data-category="Antiviral">Antivirales</button>
+                </div>
+                <div class="col-md-auto col-6">
+                    <button class="btn btn-secondary mr-1 rounded" data-category="Gastrointestinal">Gastrointestinales</button>
+                </div>
+                <div class="col-md-auto col-6">
+                    <button class="btn btn-secondary mr-1 rounded" data-category="Endocrinos">Endocrinos</button>
+                </div>
+                <div class="col-md-auto col-6">
+                    <button class="btn btn-secondary mr-1 rounded" data-category="DM">DM</button>
+                </div>
+            </div>
+        </div>
+        
+
+        <br><br>
+
+        <!--DICCIONARIO-->
+        <div class="container-fluid cont-popular">
+            <div class="container p-1">
+                <h2 class="fw-bold">Diccionario General</h2>
+                <p>Consulta la información disponible...</p>
+                <!-- Primera fila de medicamentos -->
+                <div class="row mt-1 mb-1" id="medicamentos"> <!---FILA DE ELEMENTOS--->
+                    
+                    
+            
+
+
+
+                    <!---GENERAR DE FORMA DINAMICA-->
+                   
+                </div>   
+                <div id="paginacion" class="text-center"></div> 
+            </div>
+            
+        </div>
+        
+
+
+
+<!-- CATALOGO GENERAL
+
+ <div class="container-fluid cont-popular">
+    <div class="container p-1">
+        <h2 class="fw-bold"></h2>
+        <p>Consulta la información disponible...</p>
+        
+        <div class="row mt-3 mb-1" >  FILA DE ELEMENTOS 
+            <div class="container-fluid col-12 col-md-4 col-lg-4 m-0 ps-2 pt-1">
+                <div class="border zoom" style="padding: 0; background-color: #fff;">  Contenedor principal 
+                    -----Línea delgada en la parte superior 
+                    <div style="height: 5px; background-color: purple; width: 100%;"></div> ----Línea morada 
+                    
+                    <p class="text-muted" style="font-size: 1.2rem;  padding-left: 20px; padding-top: 10px;"><strong style="color: black;">PARACETAMOL</strong> 
+                    <br><br> Oral, Comprimidos o Tabletas, Comprimidos Efervescentes, rectales...</p>
+                    <br>
+                    <p class="text-muted" style="font-size: 0.8rem;  padding-left: 20px; padding-top: 10px;"> Este medicamento alivia los dolores de cabeza bla bla bla....</p>      
+                </div>
+            </div>
+           
+           
+            <div class="container-fluid col-12 col-md-4 col-lg-4 m-0 ps-2 pt-1">
+                <div class="border zoom" style="padding: 0; background-color: #fff;"> ------Contenedor principal 
+                    ----------Línea delgada en la parte superior---------
+                    <div style="height: 5px; background-color: rgb(53, 212, 21); width: 100%;"></div> ---------Línea morada-----------
+                    
+                    <p class="text-muted" style="font-size: 1.2rem;  padding-left: 20px; padding-top: 10px;"><strong style="color: black;">MARIGUANOL</strong> 
+                    <br><br> Oral, Comprimidos o Tabletas, Comprimidos Efervescentes, rectales...</p>
+                    <br>
+                    <p class="text-muted" style="font-size: 0.8rem;  padding-left: 20px; padding-top: 10px;"> Este medicamento alivia los dolores de bla bla bla....</p>      
+                </div>
+            </div>
+           
+
+            <div class="container-fluid col-12 col-md-4 col-lg-4 m-0 ps-2 pt-1">
+                <div class="border zoom" style="padding: 0; background-color: #fff;"> ------------Contenedor principal-----------
+                    --------------Línea delgada en la parte superior -----------
+                    <div style="height: 5px; background-color: rgb(251, 255, 0); width: 100%;"></div> -----------Línea morada --------
+                    
+                    <p class="text-muted" style="font-size: 1.2rem;  padding-left: 20px; padding-top: 10px;"><strong style="color: black;">MEDICAMENTO</strong> 
+                    <br><br> Oral, Comprimidos o Tabletas, Comprimidos Efervescentes, rectales...</p>
+                    <br>
+                    <p class="text-muted" style="font-size: 0.8rem;  padding-left: 20px; padding-top: 10px;"> Este medicamento alivia los dolores de cabeza bla bla bla....</p>      
+                </div>
+            </div>
+
+
+          --------------GENERAR DE FORMA DINAMICA----------
+           
+        </div>    
+    </div>
+</div>---------->
+
+
+
+<footer class="bg-white text-dark py-4">
+    <div class="container">
+        <div class="row">
+            <!-- Columna Izquierda -->
+            <div class="col-md-4 text-center text-md-start mb-3">
+                <img src="../img/logo-udg.png" alt="Logo Footer" class="img-fluid mb-3 mt-0" style="width: 100%">
+                <p class="text-muted" style="font-size: 0.9rem;">Centro Universitario de Ciencias de la Salud.<br>
+                    Sierra Mojada 950, Col. Independencia, CP. 44340.<br>
+                    Guadalajara, Jalisco. México.<br>
+                    Teléfono: +52 (33) 1058 5200
+                </p>
+            </div>
+
+            <!-- Columna Central -->
+            <div class="col-md-4 text-center mb-3 pt-3">
+                <br>
+                <h5 class="fw-bold">Enlaces Útiles</h5>
+                <ul class="list-unstyled">
+                    <br>
+                    <li><a href="../index.html" class="text-dark text-decoration-none">Página Principal</a></li>
+                    <li><a href="./quienesSomos.html" class="text-dark text-decoration-none">Acerca de Nosotros</a></li>
+                    
+                    
+                </ul>
+            </div>
+
+            <!-- Columna Derecha -->
+            <div class="col-md-4 text-center mb-3 pt-3">
+                <br>
+                <h5 class="fw-bold">Redes Sociales</h5>
+                <ul class="list-unstyled">
+                    <br>
+                    <li><a href="https://www.instagram.com/salud_digital_cucs/" class="text-dark text-decoration-none">Instagram</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row mb-3">
+            <div class="col-12 text-center">
+                Derechos reservados ® 1997-2025, Centro Universitario de Ciencias de la Salud.
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <script src="../js/navbar.js"></script>
+    <script src="../js/farmacologia1.js"></script>
+</body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Digital Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon" href="./img/salud-digital-icon.png">
+</head>
+<body>
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                <img src="./img/salud-digital.png" alt="Logo Izquierdo" class="salud-digital-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/noticias_code.html">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/quienesSomos.html">¿Quiénes Somos?</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">Salud</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <li><a class="dropdown-item" href="./html/telemedicina.html">Telemedicina</a></li>
+                            <li><a class="dropdown-item" href="./Farmacologia/farmacologia2.html">Farmacología</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" id="dropdownMenu" aria-haspopup="true" aria-expanded="false">Aplicaciones de Salud</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu">
+                            <li><a class="dropdown-item" href="./html/salud-mental.html">Salud Mental</a></li>
+                            <li><a class="dropdown-item" href="./html/workInProgress.html">Nutrición</a></li>
+                            <li><a class="dropdown-item" href="./html/workInProgress.html">Actividad Física</a></li>
+                            <li><a class="dropdown-item" href="./html/workInProgress.html">Aplicacion enfermera</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/bioprueba.html">Servicios Bioinformáticos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/workInProgress.html">Cursos y Talleres</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./html/InteligenciaArtificial.html">Inteligencia Artificial</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="navbar-logo-right">
+                <img src="./img/logo-cucs.png" alt="Logo Derecho" class="right-logo">
+            </div>
+        </div>
+    </nav>
+    
+
+    <!-- aurelio: CONTENEDOR DE INICIO DE PAGINA E IMAGEN PRINCIPAL -->
+    <div class="container-fluid p-0">
+        <div class="container text-center salud-digital-title">
+            <p style="font-size: 6.5vh; font-weight: bold;">Bienvenidos a <span style="color: #414BB2;">Salud Digital</span></p>
+            <p style="font-size: 2.5vh;">Digitalizamos el cuidado para el bienestar de la salud humana.</p>
+            <!-- <p>Desarrollado por XXXXX, la Coordinación de Ecosistemas 
+                para el Aprendizaje y la Unidad de Salud Digital en CUCS.</p> -->
+        </div>
+<!--- CARRUSEL DE IMAGENES PRINCIPAL, DE PREFERENCIA QUE SEA GENERADO POR IMAGENES DIN-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 img-fluid" src="./img/main-img.png" alt="First slide" style="object-fit:contain; height: 100%;">
+                </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="./img/bienvenido.png" alt="Second slide" style="object-fit: cover; height: 100%;">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100 img-fluid" src="./img/sir.jpg" alt="Third slide" style="object-fit: cover; height: 100%;">
+            </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- aurelio: noticias -->
+
+        <div class="container-fluid cont-noticias ">
+            <div class="container p-5" style="padding-top: 3rem;"> <!--border border-primary -->
+                <h1 class="text-center fw-bold">NOTICIAS</h1>
+                <p class="text-center">Entérate de las nuevas noticias de nuestro portal.</p>
+        
+                <!-- Primera fila de noticias -->
+                <div class="row mt-5">
+                    <div class="div-notice container-fluid col-12 col-md-4 col-lg-4">
+                        <img src="./img/notices/unesco_notice.jpg" alt="salud-mental" class="img-fluid mb-3 app-salud-img">
+                        <p class="text-muted" style="font-size: 0.8rem;"><strong style="color: black;">UNESCO: IA en salud: cerrar la brecha entre tecnología y bienestar</strong></p>
+                    </div>
+                    <div class="div-notice container-fluid col-12 col-md-4 col-lg-4">
+                        <img src="./img/notices/el_economista.jpg" alt="nutricion" class="img-fluid mb-3 app-salud-img">
+                        <p class="text-muted" style="font-size: 0.8rem;"><strong style="color: black;">Conoce las 5 tendencias que enfrentará el sector salud en 2024.</strong></p>
+                    </div>
+                    <div class="div-notice container-fluid col-12 col-md-4 col-lg-4">
+                        <img src="./img/notices/el_milenio.jpg" alt="actividad-fisica" class="img-fluid mb-3 app-salud-img">
+                        <p class="text-muted" style="font-size: 0.8rem;"><strong style="color: black;">Salud digital, un concepto que se debe integrar como norma a todo hospital o clínica.</strong></p>
+                    </div>
+                </div>
+        
+                <!-- Agrega más filas de noticias si es necesario -->
+                <div class="text-center mt-2 pb-5">
+                    <a href="./html/noticias_code.html" class="text-decoration-none text-primary fw-bold link-hover">Conoce todas nuestras nuevas noticias &gt;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- aurelio: Salud  -->
+        
+        <div class="container-fluid cont-appsalud" style="background-color: #fff;">
+
+            <div class="container"> <!--border border-primary -->
+                <div class="row align-items-start p-5">
+                    <div class="col-md-6 d-flex justify-content-center">
+                        <img src="./img/aplicaciones-salud/salud-img.png" alt="Imagen de Salud" class="img-fluid w-100 rounded salud-imagen" style="height: 50%;">
+                    </div>
+                
+                    <div class="col-md-6 d-flex flex-column justify-content-start text-salud pt-5">
+                        <h1 class="fw-bold">Salud</h1>
+                        <p class="fs-4 ">Conoce nuestro departamento de salud.</p>
+                        <p class="text-muted" style="font-size: 1.2rem; text-align: justify;">
+                            La salud tanto fisica, mental y social es elemental para el funcionamiento [optimo del cuerpo y mente. <br>
+                            Por lo tanto, la unidad de Salud Digital se enfoca en la atención de la comunidad universitaria para un mejor desarrollo académico
+                            promoviendo su bienestar físico y emocional.
+                        </p>
+                    </div>
+                </div>
+        
+                <div class="text-center mt-3 pb-5 mb-5">
+                    <a href="./html/telemedicina.html" class="link-hover text-dark fw-bold">Telemedicina</a> &nbsp; &nbsp;
+                    <a href="./html/farmacologia2.html" class="link-hover text-dark fw-bold">Farmacología</a>
+                </div>
+            </div>
+
+            <!-- aurelio: Aplicaciones de la salud  -->
+
+            <div class="container"> <!--border border-danger -->
+                <div class="row  p-5">
+                    <div class="container" style="padding-top: 3rem;">
+                        <h1 class="text-center fw-bold">Aplicaciones de la salud.</h1>
+                        <p class="text-center">
+                            Las aplicaciones tecnológicas para mejorar la eficiencia. <br>
+                            Permiten el monitoreo remoto diagnóstico y tratamiento mental para el bienestar físico y mental.<br>
+                            Además favorecen la recopilación para la investigación.
+                        </p>
+                
+                    </div>
+
+                <!-- Areas aplicaciones de la salud -->
+
+                    <div class="row mt-5">
+                        <div class="div-notice container-fluid col-12 col-md-6 col-lg-3">
+                            <a title="Salud mental" href="./html/salud-mental.html"><img src="img/aplicaciones-salud/salud-mental.png" alt="salud-mental" class="img-fluid mb-3 app-salud-img"></a>
+                            <p class="text-muted" style="font-size: 0.8rem;"><strong style="color: black; text-align: justify;">Salud mental.</strong> El bienestar emocional psicológico y social de una persona, permite enfrentar las tensiones cotidianas, trabajar de manera productiva y contribuir a la comunidad.</p>
+                            <div class="text-center mt-2 pb-5"><br>
+                                <a href="./html/salud-mental.html" class="text-decoration-none text-primary fw-bold link-hover" style="font-size: 0.7rem;">Más acerca de salud mental &gt;</a>
+                            </div>
+                        </div>
+                        <div class="div-notice container-fluid col-12 col-md-6 col-lg-3">
+                            <a title="Nutrición" href="./html/workInProgress.html"><img src="./img/aplicaciones-salud/nutricion.png" alt="nutricion" class="img-fluid mb-3 app-salud-img"></a>
+                            <p class="text-muted" style="font-size: 0.8rem;"><strong style="color: black; text-align: justify;">Nutrición.</strong> Una nutrición adecuada es fundamental para el buen funcionamiento del organismo, ya que contribuye al fortalecimiento del sistema inmunológico y a la prevención de enfermedades.</p>
+                            <div class="text-center mt-2 pb-5">
+                                <a href="#" class="text-decoration-none text-primary fw-bold link-hover" style="font-size: 0.7rem;">Más acerca de nutrición &gt;</a>
+                            </div>
+                        </div>
+                        <div class="div-notice container-fluid col-12 col-md-6 col-lg-3">
+                            <a title="Actividad física" href="./html/workInProgress.html"><img src="img/aplicaciones-salud/actividad-fisica.png" alt="actividad-fisica" class="img-fluid mb-3 app-salud-img"></a>
+                            <p class="text-muted" style="font-size: 0.8rem;"><strong style="color: black; text-align: justify;">Actividad física.</strong> La actividad física es fundamental para mantener una vida saludable, aumentar la energía y mejorar la calidad de vida de vida, a través del fortalecimiento físico y disminución del estrés.</p>
+                            <div class="text-center mt-2 pb-5">
+                                <a href="#" class="text-decoration-none text-primary fw-bold link-hover" style="font-size: 0.7rem;">Más acerca de actividad física &gt;</a>
+                            </div>
+                        </div>
+                        <div class="div-notice container-fluid col-12 col-md-6 col-lg-3">
+                            <a title="Aplicación enfermera" href="./html/workInProgress.html"><img src="img/aplicaciones-salud/app-enfermera.png" alt="app-enfermera" class="img-fluid mb-3 app-salud-img"></a>
+                            <p class="text-muted" style="font-size: 0.8rem;"><strong style="color: black; text-align: justify;  ">App enfermera.</strong> Herramiento digital diseñada para ayudar a los usuarios a llevar un control detallado sobre los medicamentos que consumen, además de promover la adherencia al tratamiento.</p>
+                            <div class="text-center mt-2 pb-5">
+                                <a href="#" class="text-decoration-none text-primary fw-bold link-hover" style="font-size: 0.7rem;">Más acerca de app enfermera &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>        
+        </div>
+        
+        
+        <!-- Joahan: Videos
+
+        <div class="container-fluid cont-noticias" style="min-height: 60vh;">
+            <div class="container" style="padding-top: 6rem;"> <!--border border-primary 
+                <h1 class="text-center fw-bold">VIDEOS INFORMATIVOS</h1>
+                <p class="text-center">¡La información más destacada en tus redes favoritas!</p>
+                <br>
+                Fila de videos 
+                <div class="row g-4" style="padding-top: 15px;">
+                    <div class="div-video container-fluid col-12 col-md-4 col-lg-4" style="border-radius: 10px; padding-right: 10px;">
+                        <iframe style="border: none; border-radius: 5px; min-width: 100%; min-height: 30vh; align-items: center;" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        
+                        </iframe>    
+                    </div>
+                    <div class="div-video container-fluid col-12 col-md-4 col-lg-4 " style="border-radius: 10px; padding-right: 10px;">
+                        <iframe style="border: none; border-radius: 5px; min-width: 100%; min-height: 30vh; align-items: center;" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe>    
+                    </div>
+                    <div class="div-video container-fluid col-12 col-md-4 col-lg-4" style="border-radius: 10px; padding-right: 10px;">
+                        <iframe style="border: none; border-radius: 5px; min-width: 100%; min-height: 30vh; align-items: center;" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                        </iframe> 
+                    </div>  
+                   
+                </div>
+                <br>
+                ----COMENTARIO: FORMATO EN HORIZONTAL O NO PARA LOS VIDEOS ----
+                <div class="text-center mt-2 pb-5">
+                    <a href="https://www.youtube.com/watch?v=mDPzMWAIkZo" class="text-decoration-none text-primary fw-bold link-hover">Conoce nuestro canal de Youtube! &gt;</a>
+                </div>
+            </div>
+        </div>  
+        -->
+
+
+    </div>
+
+    
+
+    <footer class="text-dark py-4" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <!-- Columna Izquierda -->
+                <div class="col-md-4 text-center text-md-start mb-3">
+                    <img src="./img/logo-udg.png" alt="Logo Footer" class="img-fluid mb-3 mt-0" style="width: 100%">
+                    <p class="text-muted" style="font-size: 0.9rem;">Centro Universitario de Ciencias de la Salud.<br>
+                        Sierra Mojada 950, Col. Independencia, CP. 44340.<br>
+                        Guadalajara, Jalisco. México.<br>
+                        Teléfono: +52 (33) 1058 5200
+                    </p>
+                </div>
+    
+                <!-- Columna Central -->
+                <div class="col-md-4 text-center mb-3 pt-3">
+                    <br>
+                    <h5 class="fw-bold">Enlaces Útiles</h5>
+                    <ul class="list-unstyled">
+                        <br>
+                        <li><a href="./index.html" class="text-dark text-decoration-none">Página Principal</a></li>
+                        <li><a href="./html/quienesSomos.html" class="text-dark text-decoration-none">Acerca de Nosotros</a></li>
+                        
+                        
+                    </ul>
+                </div>
+
+                <!-- Columna Derecha -->
+                <div class="col-md-4 text-center mb-3 pt-3">
+                    <br>
+                    <h5 class="fw-bold">Redes Sociales</h5>
+                    <ul class="list-unstyled">
+                        <br>
+                        <li><a href="https://www.instagram.com/salud_digital_cucs/" class="text-dark text-decoration-none">Instagram</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-12 text-center">
+                    Derechos reservados ® 1997-2025, Centro Universitario de Ciencias de la Salud.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript personalizado -->
+    <!-- <script src="navbar.js"></script> -->
+    <script src="./js/navbar.js"></script>
+    <script src="./js/transitions.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.4.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

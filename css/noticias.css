@@ -1,0 +1,385 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+} */
+
+ body {
+    background-color: #FBF9F9;
+ }
+
+.content {
+    /* flex: 1; */
+    margin-top: 150px;
+    margin-bottom: 3rem;
+}
+
+footer {
+    padding: 10px;
+}
+
+.card {
+    transition: 0.5s ease;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    transition: 0.5s ease;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 0.9rem;
+}
+
+.text-center h1, .text-center h2 {
+    font-family: 'Arial', sans-serif;
+}
+
+/* #region modal */
+
+.modal1 {
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #525050bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999; /* Asegura que el modal esté por encima de otros elementos */
+    transition: opacity 0.6s;
+    --transform: translateY(-100vh);
+    --transition: transform 0.8s;
+}
+
+
+.modal1--show {
+    opacity: 1;
+    pointer-events: unset;
+    transition: opacity 0.6s;
+    --transform: translateY(0);
+    --transition: transform 0.6s 0.6s;
+}
+
+.botonModal {
+    text-decoration: none;
+}
+
+.modal_container1 {
+    width: 65%; /* Ancho relativo para adaptabilidad */
+    max-width: 1200px; /* Límite máximo de ancho */
+    height: auto; /* Altura ajustable al contenido */
+    min-height: 500px; /* Altura mínima para mantener tamaño consistente */
+    max-height: 80vh; /* Altura máxima basada en el tamaño de la pantalla */
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 10px; /* Bordes redondeados */
+    gap: 1em; /* Espaciado entre elementos */
+    transform: var(--transform); /* Transición visual */
+    transition: var(--transition); /* Transiciones suaves */
+    overflow-y: scroll; 
+    z-index: 10000; /* Prioridad más alta dentro del modal */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+.modal_container1::-webkit-scrollbar {
+    display: none;
+}
+
+.modal_container1 {
+    scrollbar-width: none;
+}
+
+/* Agregamos el "backdrop" para oscurecer el fondo */
+.modal_backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9998; /* Detrás del modal pero encima del contenido */
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 768px) {
+    .modal_container1 {
+        width: 85%; /* Ancho más amplio en dispositivos pequeños */
+        padding: 2em; /* Reduce el padding en dispositivos pequeños */
+    }
+}
+
+/* Media Queries para dispositivos muy pequeños */
+@media (max-width: 576px) {
+    .modal_container1 {
+        width: 100%; /* Ocupar todo el ancho */
+        padding: 1.5em; /* Reduce el padding aún más */
+        max-width: 100%; /* Desactiva la limitación de ancho */
+    }
+}
+
+.modal_title1 {
+    font-size: 2.5rem;
+}
+
+.modal_paragraph1 {
+    margin-bottom: 10px;
+    text-align: justify;
+    width: 90%;
+}
+
+.modal_img1 {
+    width: 100%;
+    max-width: 800px;
+}
+
+.modal_left {
+    float: left;
+    width: 30%;
+    margin-left: 20px;
+    margin-right: -10px;
+    padding-left: 3em; /* Espaciado interno consistente */
+    padding-right: 2.5em; /* Espaciado interno consistente */
+    padding-bottom: 2.5em; /* Espaciado interno consistente */
+}
+
+.modal_text {
+    width: 70%;
+    max-width: 800px;
+    float: right;
+    padding-right: 2.5em; /* Espaciado interno consistente */
+    padding-bottom: 2.5em; /* Espaciado interno consistente */
+}
+
+.modal_close1 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    border-radius: 50%;
+    padding: 5px 10px;
+    z-index: 10;
+}
+
+.modal_close1 {
+    margin-top: 20px;
+    margin-right: 10px;
+    text-decoration: none;
+    float: right;
+    
+    color: #fff;
+    background: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+    padding: 1vh 2vh;
+    border-radius: 50%;
+    /* display: inline-block; */
+    font-weight: bold;
+    transition: background-color 0.4s;
+}
+
+.modal_close1:hover {
+    color: #fff;
+    background-color: #333;
+    transition: background-color 0.4s;
+}
+
+.modal-title {
+    margin-left: 20px;
+    font-size: 2vh;
+    color: #000;
+    text-align: justify;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.modal-descr {
+    margin-left: 20px;
+    font-size: 1.7vh;
+    color: #000;
+    text-align: justify;
+}
+
+.modal-img {
+    width: 100%; /* Cambia el porcentaje según el ancho deseado */
+    height: 100%; /* Mantiene la proporción de la imagen */
+    max-height: 600px; /* Define una altura máxima */
+    margin: auto; /* Centra la imagen horizontalmente */
+    object-fit: cover; /* Hace que la imagen se adapte sin distorsión */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.modal_body {
+    max-height: 60vh; /* Controla cuánto del cuerpo del modal puede desplazarse */
+    /* overflow-y: auto;  */
+    /* padding: 1rem 1rem 4rem; */
+    padding-left: 1rem;
+    padding-right: 2rem;
+    padding-bottom: 40px;
+}
+
+.modal_header {
+    position: relative;
+    width: 100%;
+    height: 350px; /* Altura fija, ajusta según el diseño */
+    margin-bottom: 20px;
+}
+
+.modal-enlace {
+    margin-left: 20px;
+    font-size: 1.5vh;
+    color: #414BB2;
+    text-align: center;
+    font-weight: 600;
+    border: 1px solid #000;
+}
+
+/* #endregion */
+
+/* #region pop-up*/
+
+.popup {
+    border-radius: 20px;
+    overflow: hidden;
+    margin: auto; /* Centrar si es necesario */
+}
+
+.popup-img {
+width: 100%;
+height: 40%;
+border-bottom: 2px solid #ddd;
+}
+
+.popup-content {
+text-align: center;
+}
+
+.popup-title {
+font-weight: bold;
+margin-bottom: 10px;
+font-size: 1.5rem;
+}
+
+.popup-description {
+font-size: 1rem;
+color: #555;
+margin-bottom: 20px;
+}
+  
+
+/* #endregion */
+
+/* #region navbar*/
+@media (max-width: 1373px) {
+    .salud-digital-logo {
+        width: 160px;
+    }
+}
+
+@media (max-width: 1363px) {
+    .nav-link {
+        font-size: 0.95rem;
+    }
+    .right-logo {
+        width: 48px;
+    }
+}
+
+@media (max-width: 1321px) {
+    .salud-digital-logo {
+        width: 150px;
+    }
+    .nav-link, .dropdown-item {
+        font-size: 0.91rem;
+    }
+}
+
+@media (max-width: 1275px) {
+    .salud-digital-logo {
+        width: 145px;
+    }
+    .nav-link, .dropdown-item {
+        font-size: 0.82rem;
+    }
+}
+
+@media (max-width: 1195px) {
+    .salud-digital-logo {
+        width: 135px;
+    }
+    .nav-link, .dropdown-item {
+        font-size: .78rem;
+    }
+    .right-logo {
+        width: 42px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1121px) {
+    .salud-digital-logo {
+        width: 135px;
+        margin-right: -10px;
+    }
+    .nav-link, .dropdown-item {
+        font-size: 0.74rem;
+    }
+    .right-logo {
+        width: 40px;
+    }
+    .nav-link {
+        margin: 0px 7px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-link, .dropdown-item {
+        font-size: 0.72rem;
+    }
+}
+/* #endregion */
+
+/* #region modalprincipales*/
+#modalNoticiaImagen {
+    max-width: 90%;  /* Ajusta el tamaño relativo al modal */
+    height: 50%;
+    display: block;  /* Para centrarla */
+    margin: 0 auto; 
+}
+
+.noticia-principal{
+    cursor: pointer;
+}
+
+.modal-text{
+    font-size: .8rem;
+    text-align: justify;
+}
+/* #endregion */
